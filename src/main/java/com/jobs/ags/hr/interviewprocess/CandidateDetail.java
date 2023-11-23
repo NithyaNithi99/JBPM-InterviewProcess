@@ -6,12 +6,65 @@ package com.jobs.ags.hr.interviewprocess;
 
 public class CandidateDetail implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CandidateDetail() {
-    }
+	private java.lang.String id;
+	private java.lang.String name;
+	private boolean isGROApproved;
+	private java.lang.String lob;
+	private java.lang.String applicationId;
 
+	public CandidateDetail() {
+	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public boolean isIsGROApproved() {
+		return this.isGROApproved;
+	}
+
+	public void setIsGROApproved(boolean isGROApproved) {
+		this.isGROApproved = isGROApproved;
+	}
+
+	public java.lang.String getLob() {
+		return this.lob;
+	}
+
+	public void setLob(java.lang.String lob) {
+		this.lob = lob;
+	}
+
+	public java.lang.String getApplicationId() {
+		return this.applicationId;
+	}
+
+	public void setApplicationId(java.lang.String applicationId) {
+		this.applicationId = applicationId;
+	}
+
+	public CandidateDetail(java.lang.String id, java.lang.String name,
+			boolean isGROApproved, java.lang.String lob,
+			java.lang.String applicationId) {
+		this.id = id;
+		this.name = name;
+		this.isGROApproved = isGROApproved;
+		this.lob = lob;
+		this.applicationId = applicationId;
+	}
 
 }
