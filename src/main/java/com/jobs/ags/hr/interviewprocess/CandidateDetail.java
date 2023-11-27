@@ -13,7 +13,7 @@ public class CandidateDetail implements java.io.Serializable {
 	private java.lang.String lob;
 	private java.lang.String applicationId;
 
-	private boolean isGREApproved;
+	private String isGREApproved;
 
 	public CandidateDetail() {
 	}
@@ -50,17 +50,17 @@ public class CandidateDetail implements java.io.Serializable {
 		this.applicationId = applicationId;
 	}
 
-	public boolean isIsGREApproved() {
+	public java.lang.String getIsGREApproved() {
 		return this.isGREApproved;
 	}
 
-	public void setIsGREApproved(boolean isGREApproved) {
+	public void setIsGREApproved(java.lang.String isGREApproved) {
 		this.isGREApproved = isGREApproved;
 	}
 
 	public CandidateDetail(java.lang.String id, java.lang.String name,
 			java.lang.String lob, java.lang.String applicationId,
-			boolean isGREApproved) {
+			java.lang.String isGREApproved) {
 		this.id = id;
 		this.name = name;
 		this.lob = lob;
