@@ -10,9 +10,10 @@ public class CandidateDetail implements java.io.Serializable {
 
 	private java.lang.String id;
 	private java.lang.String name;
-	private String isGROApproved;
 	private java.lang.String lob;
 	private java.lang.String applicationId;
+
+	private java.lang.String isGREApproved;
 
 	public CandidateDetail() {
 	}
@@ -49,22 +50,22 @@ public class CandidateDetail implements java.io.Serializable {
 		this.applicationId = applicationId;
 	}
 
-	public java.lang.String getIsGROApproved() {
-		return this.isGROApproved;
+	public java.lang.String getIsGREApproved() {
+		return this.isGREApproved;
 	}
 
-	public void setIsGROApproved(java.lang.String isGROApproved) {
-		this.isGROApproved = isGROApproved;
+	public void setIsGREApproved(java.lang.String isGREApproved) {
+		this.isGREApproved = isGREApproved;
 	}
 
 	public CandidateDetail(java.lang.String id, java.lang.String name,
-			java.lang.String isGROApproved, java.lang.String lob,
-			java.lang.String applicationId) {
+			java.lang.String lob, java.lang.String applicationId,
+			java.lang.String isGREApproved) {
 		this.id = id;
 		this.name = name;
-		this.isGROApproved = isGROApproved;
 		this.lob = lob;
 		this.applicationId = applicationId;
+		this.isGREApproved = isGREApproved;
 	}
 
 }
