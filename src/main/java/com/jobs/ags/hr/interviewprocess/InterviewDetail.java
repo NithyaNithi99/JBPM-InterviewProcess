@@ -6,12 +6,34 @@ package com.jobs.ags.hr.interviewprocess;
 
 public class InterviewDetail implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public InterviewDetail() {
-    }
+	private java.lang.String interviewProcessId;
+	private java.lang.String waitingTime;
 
+	public InterviewDetail() {
+	}
 
+	public java.lang.String getInterviewProcessId() {
+		return this.interviewProcessId;
+	}
 
+	public void setInterviewProcessId(java.lang.String interviewProcessId) {
+		this.interviewProcessId = interviewProcessId;
+	}
+
+	public java.lang.String getWaitingTime() {
+		return this.waitingTime;
+	}
+
+	public void setWaitingTime(java.lang.String waitingTime) {
+		this.waitingTime = waitingTime;
+	}
+
+	public InterviewDetail(java.lang.String interviewProcessId,
+			java.lang.String waitingTime) {
+		this.interviewProcessId = interviewProcessId;
+		this.waitingTime = waitingTime;
+	}
 
 }
