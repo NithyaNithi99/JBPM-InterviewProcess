@@ -11,8 +11,6 @@ public class InterviewDetail implements java.io.Serializable {
 	private java.lang.String interviewProcessId;
 	private java.lang.String waitingTime;
 
-	private java.lang.String assesmentTime;
-
 	private java.lang.String status;
 
 	private java.lang.String deviceStatus;
@@ -36,14 +34,6 @@ public class InterviewDetail implements java.io.Serializable {
 		this.waitingTime = waitingTime;
 	}
 
-	public java.lang.String getAssesmentTime() {
-		return this.assesmentTime;
-	}
-
-	public void setAssesmentTime(java.lang.String assesmentTime) {
-		this.assesmentTime = assesmentTime;
-	}
-
 	public java.lang.String getStatus() {
 		return this.status;
 	}
@@ -61,11 +51,10 @@ public class InterviewDetail implements java.io.Serializable {
 	}
 
 	public InterviewDetail(java.lang.String interviewProcessId,
-			java.lang.String waitingTime, java.lang.String assesmentTime,
-			java.lang.String status, java.lang.String deviceStatus) {
+			java.lang.String waitingTime, java.lang.String status,
+			java.lang.String deviceStatus) {
 		this.interviewProcessId = interviewProcessId;
 		this.waitingTime = waitingTime;
-		this.assesmentTime = assesmentTime;
 		this.status = status;
 		this.deviceStatus = deviceStatus;
 	}
