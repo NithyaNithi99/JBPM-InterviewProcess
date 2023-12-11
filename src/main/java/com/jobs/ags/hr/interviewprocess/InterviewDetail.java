@@ -15,6 +15,8 @@ public class InterviewDetail implements java.io.Serializable {
 
 	private java.lang.String status;
 
+	private java.lang.String deviceStatus;
+
 	public InterviewDetail() {
 	}
 
@@ -50,13 +52,22 @@ public class InterviewDetail implements java.io.Serializable {
 		this.status = status;
 	}
 
+	public java.lang.String getDeviceStatus() {
+		return this.deviceStatus;
+	}
+
+	public void setDeviceStatus(java.lang.String deviceStatus) {
+		this.deviceStatus = deviceStatus;
+	}
+
 	public InterviewDetail(java.lang.String interviewProcessId,
 			java.lang.String waitingTime, java.lang.String assesmentTime,
-			java.lang.String status) {
+			java.lang.String status, java.lang.String deviceStatus) {
 		this.interviewProcessId = interviewProcessId;
 		this.waitingTime = waitingTime;
 		this.assesmentTime = assesmentTime;
 		this.status = status;
+		this.deviceStatus = deviceStatus;
 	}
 
 }
