@@ -8,8 +8,6 @@ public class CandidateDetail implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.String id;
-	private java.lang.String name;
 	private java.lang.String lob;
 	private java.lang.String applicationId;
 
@@ -18,22 +16,6 @@ public class CandidateDetail implements java.io.Serializable {
 	private java.lang.String jobType;
 
 	public CandidateDetail() {
-	}
-
-	public java.lang.String getId() {
-		return this.id;
-	}
-
-	public void setId(java.lang.String id) {
-		this.id = id;
-	}
-
-	public java.lang.String getName() {
-		return this.name;
-	}
-
-	public void setName(java.lang.String name) {
-		this.name = name;
 	}
 
 	public java.lang.String getLob() {
@@ -68,11 +50,9 @@ public class CandidateDetail implements java.io.Serializable {
 		this.jobType = jobType;
 	}
 
-	public CandidateDetail(java.lang.String id, java.lang.String name,
-			java.lang.String lob, java.lang.String applicationId,
-			java.lang.Boolean isGREApproved, java.lang.String jobType) {
-		this.id = id;
-		this.name = name;
+	public CandidateDetail(java.lang.String lob,
+			java.lang.String applicationId, java.lang.Boolean isGREApproved,
+			java.lang.String jobType) {
 		this.lob = lob;
 		this.applicationId = applicationId;
 		this.isGREApproved = isGREApproved;
