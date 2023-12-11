@@ -15,7 +15,7 @@ public class CandidateDetail implements java.io.Serializable {
 
 	private Boolean isGREApproved;
 
-	private java.lang.Boolean isFresher;
+	private java.lang.String jobType;
 
 	public CandidateDetail() {
 	}
@@ -60,23 +60,23 @@ public class CandidateDetail implements java.io.Serializable {
 		this.isGREApproved = isGREApproved;
 	}
 
-	public java.lang.Boolean getIsFresher() {
-		return this.isFresher;
+	public java.lang.String getJobType() {
+		return this.jobType;
 	}
 
-	public void setIsFresher(java.lang.Boolean isFresher) {
-		this.isFresher = isFresher;
+	public void setJobType(java.lang.String jobType) {
+		this.jobType = jobType;
 	}
 
 	public CandidateDetail(java.lang.String id, java.lang.String name,
 			java.lang.String lob, java.lang.String applicationId,
-			java.lang.Boolean isGREApproved, java.lang.Boolean isFresher) {
+			java.lang.Boolean isGREApproved, java.lang.String jobType) {
 		this.id = id;
 		this.name = name;
 		this.lob = lob;
 		this.applicationId = applicationId;
 		this.isGREApproved = isGREApproved;
-		this.isFresher = isFresher;
+		this.jobType = jobType;
 	}
 
 }
