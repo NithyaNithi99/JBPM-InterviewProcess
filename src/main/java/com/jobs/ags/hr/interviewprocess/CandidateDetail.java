@@ -11,11 +11,11 @@ public class CandidateDetail implements java.io.Serializable {
 	private java.lang.String lob;
 	private java.lang.String applicationId;
 
-	private Boolean isGREApproved;
-
 	private java.lang.String jobType;
 
 	private java.lang.String id;
+
+	private java.lang.Boolean isGreApproved;
 
 	public CandidateDetail() {
 	}
@@ -36,14 +36,6 @@ public class CandidateDetail implements java.io.Serializable {
 		this.applicationId = applicationId;
 	}
 
-	public java.lang.Boolean getIsGREApproved() {
-		return this.isGREApproved;
-	}
-
-	public void setIsGREApproved(java.lang.Boolean isGREApproved) {
-		this.isGREApproved = isGREApproved;
-	}
-
 	public java.lang.String getJobType() {
 		return this.jobType;
 	}
@@ -60,14 +52,22 @@ public class CandidateDetail implements java.io.Serializable {
 		this.id = id;
 	}
 
+	public java.lang.Boolean getIsGreApproved() {
+		return this.isGreApproved;
+	}
+
+	public void setIsGreApproved(java.lang.Boolean isGreApproved) {
+		this.isGreApproved = isGreApproved;
+	}
+
 	public CandidateDetail(java.lang.String lob,
-			java.lang.String applicationId, java.lang.Boolean isGREApproved,
-			java.lang.String jobType, java.lang.String id) {
+			java.lang.String applicationId, java.lang.String jobType,
+			java.lang.String id, java.lang.Boolean isGreApproved) {
 		this.lob = lob;
 		this.applicationId = applicationId;
-		this.isGREApproved = isGREApproved;
 		this.jobType = jobType;
 		this.id = id;
+		this.isGreApproved = isGreApproved;
 	}
 
 }
