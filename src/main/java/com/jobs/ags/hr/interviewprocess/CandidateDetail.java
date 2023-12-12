@@ -17,6 +17,8 @@ public class CandidateDetail implements java.io.Serializable {
 
 	private java.lang.String candidateId;
 
+	private java.lang.String id;
+
 	public CandidateDetail() {
 	}
 
@@ -60,14 +62,24 @@ public class CandidateDetail implements java.io.Serializable {
 		this.candidateId = candidateId;
 	}
 
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
 	public CandidateDetail(java.lang.String lob,
 			java.lang.String applicationId, java.lang.String jobType,
-			java.lang.Boolean isGreApproved, java.lang.String candidateId) {
+			java.lang.Boolean isGreApproved, java.lang.String candidateId,
+			java.lang.String id) {
 		this.lob = lob;
 		this.applicationId = applicationId;
 		this.jobType = jobType;
 		this.isGreApproved = isGreApproved;
 		this.candidateId = candidateId;
+		this.id = id;
 	}
 
 }
